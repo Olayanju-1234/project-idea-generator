@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Olayanju-1234/project-idea-generator#readme",
   "dependencies": {
     "axios": "^1.5.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
   }

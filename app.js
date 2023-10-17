@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const generateRouter = require('./routes/generate');
@@ -7,6 +8,7 @@ const generateRouter = require('./routes/generate');
 const port = process.env.PORT || 3000; // Set your preferred port
 
 app.use(express.json());
+app.use(cors());
 
 // home route
 app.get('/', (req, res) => {
