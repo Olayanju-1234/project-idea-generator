@@ -8,6 +8,11 @@ const port = process.env.PORT || 3000; // Set your preferred port
 
 app.use(express.json());
 
+// home route
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 app.use('/api', generateRouter);
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
